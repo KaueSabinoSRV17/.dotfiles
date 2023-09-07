@@ -1,0 +1,11 @@
+[user]
+	name = Kauê Sabino Villaça de Almeida
+	email = kauevillaca2018@gmail.com
+[pull]
+	rebase = true
+[init]
+	defaultBranch = main
+[credential]
+	helper = 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
+[core]
+	editor = lvim
