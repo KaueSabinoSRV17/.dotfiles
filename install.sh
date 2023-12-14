@@ -27,10 +27,10 @@ echo "Making symbolic links to the dotfiles and configuration"
 mkdir ~/.config/ ~/.config/lvim/ ~/.config/tmux/
 touch ~/.gitconfig ~/.zshrc
 rm ~/.gitconfig ~/.zshrc
-ln -s ~/.gitconfig ~/.dotfiles/.gitconfig
-ln -s ~/.zshrc ~/.dotfiles/.zshrc
-ln -s ~/.config/lvim/config.lua ~/.dotfiles/lvim/config.lua
-ln -s ~/.config/tmux/tmux.conf ~/.dotfiles/tmux/tmux.conf
+ln -sf ~/.gitconfig ~/.dotfiles/.gitconfig
+ln -sf ~/.zshrc ~/.dotfiles/.zshrc
+ln -sf ~/.config/lvim/config.lua ~/.dotfiles/lvim/config.lua
+ln -sf ~/.config/tmux/tmux.conf ~/.dotfiles/tmux/tmux.conf
 
 echo "Making my prefered folder structure"
 mkdir ~/projects/
