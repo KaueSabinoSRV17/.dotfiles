@@ -2,7 +2,7 @@
 	name = Kauê Sabino Villaça de Almeida
 	email = kauevillaca2018@gmail.com
 [pull]
-	rebase = true
+	rebase = false
 [init]
 	defaultBranch = main
 [credential]
