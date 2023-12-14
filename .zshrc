@@ -101,8 +101,6 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias la='ls -A'
 alias ll='ls -l'
-export PATH=$PATH:/home/kaue/programs/flutter/bin
-source <(flutter bash-completion)
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -158,7 +156,6 @@ export PATH=$PATH:/home/kaue/go/bin
 source <(flow completion zsh)
 source /usr/share/google-cloud-sdk/completion.zsh.inc
 alias cpb='xsel -ib'
-alias code='/mnt/c/Users/TMaior/AppData/Local/Programs/Microsoft\ VS\ Code/bin/code'
 alias compose='docker compose'
 alias mysql='docker run -it --rm mysql bash'
 alias mysql='docker run -it --rm mysql mysql'
@@ -176,3 +173,16 @@ export PATH="/home/linuxbrew/.linuxbrew/opt/openjdk@8/bin:$PATH"
 alias vim=nvim
 alias vim=lvim
 export EDGE_POINT=~/projects/work/betha/edge_point
+complete -C '/home/linuxbrew/.linuxbrew/bin/aws_completer' aws
+
+# bun completions
+[ -s "/home/kaue/.bun/_bun" ] && source "/home/kaue/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+bindkey '^[[l' clear
+bindkey '^H' backward-kill-word
+plugins+=(flatpak)
+export PYTHONPATH=/home/linuxbrew/.linuxbrew/opt/python@3.11/lib/python3.11/site-packages
+export ALACRITTY_CONFIG=~/.config/alacritty/alacritty.yml
